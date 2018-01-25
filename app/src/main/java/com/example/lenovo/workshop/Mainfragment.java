@@ -22,8 +22,8 @@ public class Mainfragment extends Fragment {
     Bundle b = new Bundle();
 
     public Mainfragment() {
-        // Required empty public constructor
-    }
+
+           }
 
 
 
@@ -37,6 +37,8 @@ public class Mainfragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = LayoutInflater.from(getContext()).inflate(R.layout.fragment_mainfragment,container,false);
+        tabLayout = (TabLayout) v.findViewById(R.id.tablayout);
+        viewPager = (ViewPager) v.findViewById(R.id.viewpager);
         return v;
     }
 
