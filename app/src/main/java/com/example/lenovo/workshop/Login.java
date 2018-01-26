@@ -1,5 +1,6 @@
 package com.example.lenovo.workshop;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -25,7 +26,9 @@ private EditText ed_name,ed_pass;
    String password = ed_pass.getText().toString();
    String db_pass = databaseHelper.searchpass(username);
         if(password.equals(db_pass)){
-
+            Intent i = new Intent(Login.this,Dashboard.class);
+            i.putExtra("username",username);
+            startActivity(i);
         }
         else {
             Toast.makeText(Login.this, "Password and username do not match", Toast.LENGTH_SHORT).show();
