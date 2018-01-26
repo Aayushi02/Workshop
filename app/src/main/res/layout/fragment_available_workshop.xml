@@ -4,5 +4,13 @@
     android:layout_height="match_parent"
     tools:context="com.example.lenovo.workshop.AvailableWorkshop">
 
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ListView
+    android:id="@+id/worshoplist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listviewcolor"></ListView>
+</LinearLayout>
 </FrameLayout>

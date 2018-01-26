@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 public class Mainfragment extends Fragment {
 
-   TabLayout tabLayout;
+
     ViewPager viewPager;
     public static final int tabcount = 2;
     public static final String[] tabname = {
@@ -37,7 +37,6 @@ public class Mainfragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = LayoutInflater.from(getContext()).inflate(R.layout.fragment_mainfragment,container,false);
-        tabLayout = (TabLayout) v.findViewById(R.id.tablayout);
         viewPager = (ViewPager) v.findViewById(R.id.viewpager);
         return v;
     }

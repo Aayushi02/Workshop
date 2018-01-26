@@ -6,4 +6,5 @@
     <color name="white">#FFFFFF</color>
     <color name="green">#BFF091</color>
     <color name="tabcolor">#0FAFFF</color>
+    <color name="listviewcolor">#022</color>
 </resources>
